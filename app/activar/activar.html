@@ -1,0 +1,9 @@
+<section ng-controller="activarControlador as ac">
+    <div ng-show="ac.activado">
+        Usuario activado
+    </div>
+    <div ng-show="!ac.activado">
+        Usuario no activado
+        <button type="sumit" ng-click="ac.activarUsuario()">Reitentar</button>
+    </div>
+</section>
