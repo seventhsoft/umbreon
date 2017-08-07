@@ -8,7 +8,8 @@
         var servicio = {
             parametros : {},
             activarUsuario : activarUsuario,
-            recuperarPassword : recuperarPassword
+            recuperarPassword : recuperarPassword,
+            redirecionarBanner : redirecionarBanner
         };
         return servicio;
         
@@ -21,6 +22,12 @@
             var ruta = Rutas.RUTABK+"/usuarios/recuperar/password/"+key;
             return $http.put(ruta,parametros);
         };
+        
+        function redirecionarBanner(idBanner){
+            var ruta = Rutas.RUTABK+"/banner/interaccion/"+idBanner;
+            return $http.put(ruta);
+        };
+        
     };
 })();
 

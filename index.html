@@ -4,9 +4,10 @@
 <head>
     <title>Recuperar contraseña</title>
     <meta charset="UTF-8">
+    <meta name="304Fix" content="safari-fix">
     <link href="assets/css/materialism.css" rel="stylesheet" />
     <link href="assets/css/helpers.css" rel="stylesheet" />
-    <link href="assets/css/ripples.css" rel="stylesheet" />
+    <link href="assets/css/ripples.css" rel="stylesheet" />    
     <script charset="utf-8" src="assets/bower_components/angular/angular.js"></script>
     <script charset="utf-8" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
     <script charset="utf-8" src="assets/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
@@ -19,6 +20,7 @@
     <script charset="utf-8" src="app/inicio/main.js" type="text/javascript"></script>
     <script charset="utf-8" src="app/activar/activar.js" type="text/javascript"></script>
     <script charset="utf-8" src="app/recuperar/recuperar.js" type="text/javascript"></script>
+    <script charset="utf-8" src="app/banner/banner.controlador.js" type="text/javascript"></script>
 </head>
 
 
@@ -26,6 +28,7 @@
     <div ng-show="mc.tipo !== '1' && mc.tipo !== '2'" ng-include src="'app/inicio/main.html'" class="page-login"></div>
     <div ng-if="mc.tipo == '1'" ng-include src="'app/activar/activar.html'" class="page-login"></div>
     <div ng-if="mc.tipo == '2'" ng-include src="'app/recuperar/recuperar.html'" class="page-login"></div>
+    <div ng-if="mc.tipo == '3'" ng-include src="'app/banner/banner.html'" class="page-login"></div>
 </body>
 
 </html>

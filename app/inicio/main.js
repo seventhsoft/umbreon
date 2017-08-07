@@ -8,6 +8,7 @@ angular.module('kuniH')
         mc.parametros = $location.search();
         if(mc.parametros.tipo !== undefined){
             Servicio.parametros = mc.parametros;
+            console.log(mc.parametros.tipo);
             mc.tipo = mc.parametros.tipo;
         };
     };
